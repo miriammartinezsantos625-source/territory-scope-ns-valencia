@@ -1,0 +1,66 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #F5F7FB; font-family: "Inter", sans-serif; }
+    #root .pop { position: absolute; inset: 0; transform-origin: 50% 50%; }
+    #root .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    #root .shot { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; }
+    #root .mark { position: absolute; background: rgba(255, 214, 10, 0.50); mix-blend-mode: multiply; border-radius: 4px;
+                  transform-origin: 0 50%; opacity: 0; z-index: 50; }
+    #root .cursor { position: absolute; left: 0; top: 0; width: 54px; height: 54px; z-index: 90; opacity: 0; }
+    #root .cursor .ci { width: 54px; height: 54px; transform-origin: 6px 4px; }
+    #root .cap { position: absolute; left: 192px; bottom: 132px; z-index: 80; opacity: 0; }
+    #root .cap span { display: inline-block; background: rgba(11, 37, 69, 0.92); color: #fff; font-weight: 700;
+                      font-size: 40px; letter-spacing: -0.01em; padding: 16px 28px; border-radius: 10px;
+                      box-shadow: 0 10px 30px rgba(11, 37, 69, 0.25); }
+  </style>
+  <div id="root" data-composition-id="s4journey" data-width="1920" data-height="1080" data-start="0" data-duration="7.0">
+    <div id="s4journey-pop" class="pop">
+      <div id="s4journey-cam" class="cam" data-layout-allow-overflow>
+        <img id="s4journey-img0" class="clip shot" src="assets/screens/08_weights_after.png" alt="" data-start="0" data-duration="0.73" data-track-index="1" />
+        <img id="s4journey-img1" class="clip shot" src="assets/screens/10_journey_diagram.png" alt="" data-start="0.73" data-duration="3.1" data-track-index="2" />
+        <img id="s4journey-img2" class="clip shot" src="assets/screens/11_journey_frictions.png" alt="" data-start="3.83" data-duration="3.17" data-track-index="3" />
+        <div id="s4journey-mk0" class="mark" style="left:862px;top:871px;width:149px;height:84px"></div>
+        <div id="s4journey-mk1" class="mark" style="left:1176px;top:969px;width:174px;height:32px"></div>
+        <div id="s4journey-mk2" class="mark" style="left:1042px;top:351px;width:204px;height:32px"></div>
+        <div id="s4journey-mk3" class="mark" style="left:914px;top:376px;width:130px;height:32px"></div>
+        <div id="s4journey-mk4" class="mark" style="left:1346px;top:351px;width:258px;height:32px"></div>
+      </div>
+    </div>
+    <div id="s4journey-cap0" class="cap"><span>La transición a los 18 años</span></div>
+    <div id="s4journey-cap1" class="cap"><span>Fricciones con evidencia</span></div>
+    <div id="s4journey-cur" class="cursor" data-layout-ignore>
+      <svg id="s4journey-curi" class="ci" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 2.5 L5 19.5 L9.4 15.4 L12.3 21.6 L15.2 20.3 L12.4 14.2 L18.6 14.2 Z"
+              fill="#111827" stroke="#ffffff" stroke-width="1.4" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#s4journey-cam", { x: 0.0, y: 0.0, scale: 1.0 }, 0);
+    tl.set("#s4journey-pop", { scale: 1 }, 0);
+    tl.to("#s4journey-cam", { x: -1526.0, y: -1296.0, scale: 2.2, duration: 0.75, ease: "power2.inOut" }, 1.15);
+    tl.to("#s4journey-cam", { x: -1966.0, y: -219.0, scale: 2.2, duration: 0.01, ease: "none" }, 3.83);
+    tl.fromTo("#s4journey-pop", { scale: 1.03 }, { scale: 1, duration: 0.35, ease: "expo.out" }, 0.763);
+    tl.fromTo("#s4journey-pop", { scale: 1.03 }, { scale: 1, duration: 0.35, ease: "expo.out" }, 3.863);
+    tl.fromTo("#s4journey-mk0", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 1.95);
+    tl.to("#s4journey-mk0", { opacity: 0, duration: 0.2, ease: "power1.out" }, 3.8);
+    tl.fromTo("#s4journey-mk1", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 2.25);
+    tl.to("#s4journey-mk1", { opacity: 0, duration: 0.2, ease: "power1.out" }, 3.8);
+    tl.fromTo("#s4journey-mk2", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 4.3);
+    tl.fromTo("#s4journey-mk3", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 4.45);
+    tl.fromTo("#s4journey-mk4", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 4.85);
+    tl.set("#s4journey-cur", { opacity: 0 }, 0);
+    tl.set("#s4journey-cur", { x: 700.0, y: 700.0 }, 0.0);
+    tl.to("#s4journey-cur", { opacity: 1, duration: 0.15 }, 0.0);
+    tl.to("#s4journey-cur", { opacity: 0, duration: 0.2 }, 1.1);
+    tl.to("#s4journey-cur", { x: 867.5, y: 460.0, duration: 0.65, ease: "power3.inOut" }, 0.0);
+    tl.to("#s4journey-curi", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 0.67);
+    tl.to("#s4journey-curi", { scale: 1, duration: 0.14, ease: "power2.out" }, 0.73);
+    tl.fromTo("#s4journey-cap0", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 1.9);
+    tl.to("#s4journey-cap0", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 3.6);
+    tl.fromTo("#s4journey-cap1", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 4.4);
+    tl.to("#s4journey-cap1", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 6.8);
+    window.__timelines["s4journey"] = tl;
+  </script>
+</template>

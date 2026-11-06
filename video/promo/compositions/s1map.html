@@ -1,0 +1,73 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #F5F7FB; font-family: "Inter", sans-serif; }
+    #root .pop { position: absolute; inset: 0; transform-origin: 50% 50%; }
+    #root .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    #root .shot { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; }
+    #root .mark { position: absolute; background: rgba(255, 214, 10, 0.50); mix-blend-mode: multiply; border-radius: 4px;
+                  transform-origin: 0 50%; opacity: 0; z-index: 50; }
+    #root .cursor { position: absolute; left: 0; top: 0; width: 54px; height: 54px; z-index: 90; opacity: 0; }
+    #root .cursor .ci { width: 54px; height: 54px; transform-origin: 6px 4px; }
+    #root .cap { position: absolute; left: 192px; bottom: 132px; z-index: 80; opacity: 0; }
+    #root .cap span { display: inline-block; background: rgba(11, 37, 69, 0.92); color: #fff; font-weight: 700;
+                      font-size: 40px; letter-spacing: -0.01em; padding: 16px 28px; border-radius: 10px;
+                      box-shadow: 0 10px 30px rgba(11, 37, 69, 0.25); }
+  </style>
+  <div id="root" data-composition-id="s1map" data-width="1920" data-height="1080" data-start="0" data-duration="9.6">
+    <div id="s1map-pop" class="pop">
+      <div id="s1map-cam" class="cam" data-layout-allow-overflow>
+        <img id="s1map-img0" class="clip shot" src="assets/screens/01_map.png" alt="" data-start="0" data-duration="4.45" data-track-index="1" />
+        <img id="s1map-img1" class="clip shot" src="assets/screens/02_map_dropdown.png" alt="" data-start="4.45" data-duration="1.48" data-track-index="2" />
+        <img id="s1map-img2" class="clip shot" src="assets/screens/03_map_pacientes.png" alt="" data-start="5.93" data-duration="3.67" data-track-index="3" />
+        <div id="s1map-mk0" class="mark" style="left:742px;top:316px;width:100px;height:42px"></div>
+        <div id="s1map-mk1" class="mark" style="left:1000px;top:316px;width:100px;height:42px"></div>
+        <div id="s1map-mk2" class="mark" style="left:1388px;top:844px;width:356px;height:75px"></div>
+        <div id="s1map-mk3" class="mark" style="left:1384px;top:533px;width:308px;height:36px"></div>
+      </div>
+    </div>
+    <div id="s1map-cap0" class="cap"><span>Pacientes TDAH estimados</span></div>
+    <div id="s1map-cap1" class="cap"><span>¿Dónde falta atención?</span></div>
+    <div id="s1map-cap2" class="cap"><span>Mapa por departamento de salud</span></div>
+    <div id="s1map-cur" class="cursor" data-layout-ignore>
+      <svg id="s1map-curi" class="ci" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 2.5 L5 19.5 L9.4 15.4 L12.3 21.6 L15.2 20.3 L12.4 14.2 L18.6 14.2 Z"
+              fill="#111827" stroke="#ffffff" stroke-width="1.4" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#s1map-cam", { x: 0.0, y: 0.0, scale: 1.0 }, 0);
+    tl.set("#s1map-pop", { scale: 1 }, 0);
+    tl.to("#s1map-cam", { x: -699.5, y: -527.4, scale: 1.4884, duration: 0.8, ease: "power2.inOut" }, 1.7);
+    tl.to("#s1map-cam", { x: -749.4, y: -931.0, scale: 1.8621, duration: 0.8, ease: "power2.inOut" }, 6.5);
+    tl.to("#s1map-cam", { x: 0.0, y: 0.0, scale: 1.0, duration: 0.8, ease: "power2.inOut" }, 8.75);
+    tl.fromTo("#s1map-pop", { scale: 1.03 }, { scale: 1, duration: 0.35, ease: "expo.out" }, 4.483);
+    tl.fromTo("#s1map-pop", { scale: 1.03 }, { scale: 1, duration: 0.35, ease: "expo.out" }, 5.963);
+    tl.fromTo("#s1map-mk0", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.45);
+    tl.to("#s1map-mk0", { opacity: 0, duration: 0.2, ease: "power1.out" }, 1.9);
+    tl.fromTo("#s1map-mk1", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.65);
+    tl.to("#s1map-mk1", { opacity: 0, duration: 0.2, ease: "power1.out" }, 1.9);
+    tl.fromTo("#s1map-mk2", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 2.7);
+    tl.to("#s1map-mk2", { opacity: 0, duration: 0.2, ease: "power1.out" }, 4.3);
+    tl.fromTo("#s1map-mk3", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 6.35);
+    tl.to("#s1map-mk3", { opacity: 0, duration: 0.2, ease: "power1.out" }, 8.6);
+    tl.set("#s1map-cur", { opacity: 0 }, 0);
+    tl.set("#s1map-cur", { x: 1949.9, y: 603.8 }, 3.5);
+    tl.to("#s1map-cur", { opacity: 1, duration: 0.15 }, 3.5);
+    tl.to("#s1map-cur", { opacity: 0, duration: 0.2 }, 6.6);
+    tl.to("#s1map-cur", { x: 1631.3, y: 292.7, duration: 0.75, ease: "power3.inOut" }, 3.55);
+    tl.to("#s1map-cur", { x: 1631.3, y: 478.8, duration: 0.6, ease: "power3.inOut" }, 4.95);
+    tl.to("#s1map-curi", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 4.39);
+    tl.to("#s1map-curi", { scale: 1, duration: 0.14, ease: "power2.out" }, 4.45);
+    tl.to("#s1map-curi", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 5.87);
+    tl.to("#s1map-curi", { scale: 1, duration: 0.14, ease: "power2.out" }, 5.93);
+    tl.fromTo("#s1map-cap0", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0.3);
+    tl.to("#s1map-cap0", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 1.9);
+    tl.fromTo("#s1map-cap1", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 2.6);
+    tl.to("#s1map-cap1", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 4.2);
+    tl.fromTo("#s1map-cap2", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 6.6);
+    tl.to("#s1map-cap2", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 8.5);
+    window.__timelines["s1map"] = tl;
+  </script>
+</template>

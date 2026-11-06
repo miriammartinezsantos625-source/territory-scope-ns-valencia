@@ -1,0 +1,107 @@
+# Territory Scope NS Valencia · Área terapéutica: TDAH
+# Para añadir otra patología de neurociencia, copia este archivo (p. ej. config/areas/<area>.yaml)
+# y cambia prevalencias, grupos de edad, recursos y pesos. El código no cambia.
+
+area:
+  id: tdah
+  nombre: "TDAH (trastorno por déficit de atención e hiperactividad)"
+  descripcion: >
+    Estimación de pacientes potenciales = población (INE, Censo Anual 1-1-2025) × prevalencia publicada.
+    Son ESTIMACIONES epidemiológicas, no casos diagnosticados ni pacientes tratados.
+
+# Grupos de población (columnas de data/processed/poblacion_departamento.csv)
+grupos:
+  infantil: {columna: pob_6_17, etiqueta: "6–17 años"}
+  adulto:   {columna: pob_18_64, etiqueta: "18–64 años"}
+
+# Prevalencias (%) · escenarios bajo / base / alto. Todas verificadas en PubMed el 2026-11-06.
+# Auditoría 2026-11-06: el escenario adulto pasa de Fayyad (18–44 años) a Simon 2009 (todas las edades adultas).
+prevalencia:
+  infantil:
+    bajo: 5.3
+    base: 6.8
+    alto: 8.8
+  adulto:
+    bajo: 2.1
+    base: 2.5
+    alto: 3.1
+  notas:
+    infantil_bajo: "Prevalencia mundial agrupada 5,29 % (≤18 años) · Polanczyk et al., 2007"
+    infantil_base: "Prevalencia agrupada en España 6,8 % (IC95 % 4,9–8,8) · Catalá-López et al., 2012"
+    infantil_alto: "Límite superior del IC95 % de Catalá-López et al., 2012 (8,8 %)"
+    adulto_bajo: "Límite inferior del IC95 % de Simon et al., 2009 (2,1 %)"
+    adulto_base: "Prevalencia agrupada en adultos 2,5 % (IC95 % 2,1–3,1) · Simon et al., 2009 (todas las edades adultas)"
+    adulto_alto: "Límite superior del IC95 % de Simon et al., 2009 (3,1 %)"
+    adulto_contexto: >
+      Fayyad et al., 2017 (encuestas WMH-OMS) estiman 2,8 % de media y 3,6 % en países de ingresos altos, pero
+      medidos solo entre 18 y 44 años y con prevalencia decreciente con la edad; por eso no se aplican a 18–64.
+
+referencias:
+  - id: catala2012
+    cita: "Catalá-López F, Peiró S, Ridao M, Sanfélix-Gimeno G, Gènova-Maleras R, Catalá MA. Prevalence of attention deficit hyperactivity disorder among children and adolescents in Spain: a systematic review and meta-analysis of epidemiological studies. BMC Psychiatry. 2012;12:168."
+    pmid: "23057832"
+    doi: "10.1186/1471-244X-12-168"
+  - id: polanczyk2007
+    cita: "Polanczyk G, de Lima MS, Horta BL, Biederman J, Rohde LA. The worldwide prevalence of ADHD: a systematic review and metaregression analysis. Am J Psychiatry. 2007;164(6):942-8."
+    pmid: "17541055"
+    doi: "10.1176/ajp.2007.164.6.942"
+  - id: simon2009
+    cita: "Simon V, Czobor P, Bálint S, Mészáros A, Bitter I. Prevalence and correlates of adult attention-deficit hyperactivity disorder: meta-analysis. Br J Psychiatry. 2009;194(3):204-11."
+    pmid: "19252145"
+    doi: "10.1192/bjp.bp.107.048827"
+  - id: fayyad2017
+    cita: "Fayyad J, Sampson NA, Hwang I, et al. The descriptive epidemiology of DSM-IV adult ADHD in the World Health Organization World Mental Health Surveys. Atten Defic Hyperact Disord. 2017;9(1):47-65."
+    pmid: "27866355"
+    doi: "10.1007/s12402-016-0208-3"
+
+# Recursos especializados que cuentan para la BRECHA (pacientes estimados por recurso del departamento).
+# Población diana "infantil" cuenta en infantil, "adulto" en adulto; "ambas" ver regla siguiente.
+recursos_especializados:
+  infantil: [usmi, neuropediatria, privada_neuropediatria, privada_psiquiatria]
+  adulto:   [usm, hospital_dia_sm, hospital_psiquiatrico, privada_psiquiatria]
+# Las cuentas con población diana "ambas" solo cuentan como recurso INFANTIL si su tipo está en esta lista
+# (la psiquiatría privada "ambas" atiende sobre todo adultos; no se cuenta como recurso infanto-juvenil).
+ambas_cuentan_en_infantil: []
+# Recursos no verificados (p. ej. neuropediatría inferida) cuentan con este peso.
+peso_recurso_no_verificado: 0.5
+# Máximo de recursos INFERIDOS del mismo tipo que se cuentan por departamento (evita contar doble
+# en departamentos con dos hospitales).
+max_inferidos_por_tipo_y_departamento: 1
+# Suavizado para departamentos sin recursos registrados: pacientes / (recursos + suavizado).
+suavizado_recursos: 1
+
+# Peso por tipo de cuenta (componente RELEVANCIA, 0–100)
+relevancia_tipo:
+  usmi: 100
+  neuropediatria: 90
+  privada_neuropediatria: 85
+  usm: 80
+  privada_psiquiatria: 75
+  hospital_dia_sm: 55
+  hospital_publico: 50
+  hospital_psiquiatrico: 40
+  hospital_privado: 40
+  recurso_sm_otro: 30
+  privada_internamiento: 30   # recursos residenciales / de internamiento
+# Multiplicador de relevancia si la cuenta no está verificada en fuente oficial
+factor_no_verificado: 0.8
+
+# Pesos por defecto del score (se normalizan para sumar 1; editables con sliders en la app)
+pesos:
+  potencial: 0.35
+  brecha: 0.30
+  relevancia: 0.25
+  mercado_privado: 0.10
+  acceso: 0.10   # solo se aplica si existe data/private/relaciones.csv; si no, modo demo (peso 0)
+
+# Segmentación por percentil de score
+segmentos:
+  A: 0.20   # top 20 %
+  B: 0.30   # siguiente 30 %
+  # C: resto
+
+# Plan de visitas (por defecto)
+visitas:
+  visitas_dia: 6
+  dias_campo_mes: 16
+  frecuencia_mes: {A: 1.0, B: 0.5, C: 0.33}

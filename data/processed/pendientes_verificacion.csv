@@ -1,0 +1,50 @@
+tipo_pendiente,dpto,departamento,cuenta_id,detalle
+coordenadas_aproximadas,01,VINAROS,UA-R10501,Geocodificada al centro del municipio; revisar ubicación exacta.
+coordenadas_aproximadas,01,VINAROS,UA-R10637,Geocodificada al centro del municipio; revisar ubicación exacta.
+coordenadas_aproximadas,01,VINAROS,UI-R10504,Geocodificada al centro del municipio; revisar ubicación exacta.
+coordenadas_aproximadas,06,VALENCIA ARNAU LLIRIA,PI-R21127,Geocodificada al centro del municipio; revisar ubicación exacta.
+coordenadas_aproximadas,06,VALENCIA ARNAU LLIRIA,UA-R10802,Geocodificada al centro del municipio; revisar ubicación exacta.
+coordenadas_aproximadas,06,VALENCIA ARNAU LLIRIA,UA-R10428,Geocodificada al centro del municipio; revisar ubicación exacta.
+coordenadas_aproximadas,18,ELDA,PP-R14881,Geocodificada al centro del municipio; revisar ubicación exacta.
+coordenadas_aproximadas,22,TORREVIEJA,HV-R3823,Geocodificada al centro del municipio; revisar ubicación exacta.
+cuenta_no_verificada,01,VINAROS,NP-S1500,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,02,CASTELLON,NP-S1536,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,02,CASTELLON,NP-S1503,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,03,LA PLANA,NP-S1501,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,04,SAGUNTO,NP-S974,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,05,VALENCIA - CLINICO,NP-S977,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,06,VALENCIA ARNAU LLIRIA,NP-S3082,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,06,VALENCIA ARNAU LLIRIA,NP-S968,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,07,VALENCIA - LA FE,NP-S90400,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,08,REQUENA,NP-S972,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,09,VALENCIA HOSPITAL GENERAL,NP-S984,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,10,VALENCIA - DR. PESET,NP-S953,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,11,LA RIBERA,NP-S961,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,12,GANDIA,NP-S954,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,13,DENIA,NP-S2840,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,14,XATIVA - ONTINYENT,NP-S958,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,14,XATIVA - ONTINYENT,NP-S956,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,15,ALCOI,NP-S1207,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,16,VILA JOIOSA,NP-S1229,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,17,ALICANTE - SAN JUAN,NP-S1234,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,18,ELDA,NP-S1215,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,19,ALICANTE,NP-S1200,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,20,ELX,NP-S1219,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,21,ORIHUELA,NP-S1223,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,22,TORREVIEJA,NP-S2526,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,22,TORREVIEJA,PP-ON10939051672,Fuente colaborativa (OSM): confirmar actividad y especialidad.
+cuenta_no_verificada,23,MANISES,NP-S2837,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+cuenta_no_verificada,24,ELX-CREVILLENT,NP-S3050,Servicio inferido (hospital general con pediatría). Pendiente de confirmar neuropediatría en la web del hospital.
+departamento_sin_usm_en_registro,15,ALCOI,,No consta USM de adultos en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usm_en_registro,18,ELDA,,No consta USM de adultos en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,08,REQUENA,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,11,LA RIBERA,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,12,GANDIA,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,13,DENIA,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,15,ALCOI,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,17,ALICANTE - SAN JUAN,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,18,ELDA,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,21,ORIHUELA,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,22,TORREVIEJA,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,23,MANISES,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.
+departamento_sin_usmi_en_registro,24,ELX-CREVILLENT,,No consta USMI en el Registro de centros 2021. Puede estar integrada en un centro de salud o atenderse desde otro departamento: confirmar en la web del departamento. No se crea ninguna cuenta hasta confirmarlo.

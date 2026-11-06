@@ -1,0 +1,25 @@
+dpto,departamento,pob_sip_total,pob_sip_pediatrica,pob_0_5,pob_6_17,pob_18_64,pob_65_mas,pob_total,n_secciones,pct_6_17,pct_18_64,dif_vs_sip_pct,fuente
+01,VINAROS,81093,12021,4126,11349,58134,21481,95090,70,11.94,61.14,17.26,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+02,CASTELLON,260144,38628,13522,36926,189639,59535,299622,192,12.32,63.29,15.18,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+03,LA PLANA,171467,26459,9126,24944,123444,38049,195563,141,12.75,63.12,14.05,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+04,SAGUNTO,149424,21644,7253,21070,106937,36262,171521,122,12.28,62.35,14.79,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+05,VALENCIA - CLINICO,310435,40674,14727,40216,224389,73136,352469,235,11.41,63.66,13.54,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+06,VALENCIA ARNAU LLIRIA,299274,46380,16955,48649,232280,65665,363549,239,13.38,63.89,21.48,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+07,VALENCIA - LA FE,261207,37804,13085,35813,188319,57378,294595,199,12.16,63.92,12.78,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+08,REQUENA,43473,5484,1830,5352,30124,12674,49980,41,10.71,60.27,14.97,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+09,VALENCIA HOSPITAL GENERAL,335740,45801,17078,45780,248908,74790,386556,255,11.84,64.39,15.14,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+10,VALENCIA - DR. PESET,252556,32482,12329,31817,185216,61865,291227,207,10.93,63.6,15.31,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+11,LA RIBERA,237186,35769,12804,34325,172535,54561,274225,183,12.52,62.92,15.62,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+12,GANDIA,167374,23786,8453,23182,122733,39582,193950,126,11.95,63.28,15.88,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+13,DENIA,163123,21599,7982,21969,120869,48121,198941,104,11.04,60.76,21.96,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+14,XATIVA - ONTINYENT,174517,23526,8340,22471,125071,43036,198918,155,11.3,62.88,13.98,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+15,ALCOI,125350,17547,6070,16533,88814,31390,142807,130,11.58,62.19,13.93,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+16,VILA JOIOSA,174800,23279,8814,23633,132698,44519,209663,115,11.27,63.29,19.94,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+17,ALICANTE - SAN JUAN,210091,29564,10958,31307,159502,51990,253757,159,12.34,62.86,20.78,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+18,ELDA,170422,24836,8623,23880,121830,41573,195906,143,12.19,62.19,14.95,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+19,ALICANTE,251781,37568,13068,35662,185935,53269,287934,187,12.39,64.58,14.36,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+20,ELX,153424,23761,8494,23604,116293,33973,182364,120,12.94,63.77,18.86,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+21,ORIHUELA,153825,26720,9830,24497,113298,32226,179850,101,13.62,63.0,16.92,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+22,TORREVIEJA,183958,26190,9371,24994,129412,57257,221034,68,11.31,58.55,20.15,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+23,MANISES,190291,27172,10142,27776,144397,42037,224351,138,12.38,64.36,17.9,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA
+24,ELX-CREVILLENT,140578,22446,7747,20551,101066,31947,161310,119,12.74,62.65,14.75,INE Censo Anual de Población 1-1-2025 (sección censal) + callejero sanitario GVA

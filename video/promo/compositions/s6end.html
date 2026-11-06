@@ -1,0 +1,42 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #F5F7FB; font-family: "Inter", sans-serif; }
+    #root .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    #root .shot { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    #root .ground { position: absolute; inset: 0; opacity: 0;
+      background: radial-gradient(1400px 520px at 82% -10%, rgba(33,169,159,.30), transparent 60%),
+                  linear-gradient(120deg, #0B2545 0%, #0F3B66 55%, #0F4C81 100%); }
+    #root .lock { position: absolute; left: 192px; right: 192px; top: 390px; color: #fff; }
+    #root .eyebrow { font-size: 28px; font-weight: 700; letter-spacing: .18em; color: #8FE3DA; text-transform: uppercase; opacity: 0; }
+    #root .word { font-size: 104px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; margin-top: 18px;
+                  clip-path: inset(0 100% 0 0); }
+    #root .rule { width: 160px; height: 6px; border-radius: 3px; background: #21A99F; margin: 34px 0 30px 0;
+                  transform-origin: 0 50%; transform: scaleX(0); }
+    #root .credit { font-size: 42px; font-weight: 400; color: rgba(255,255,255,.86); opacity: 0; }
+    #root .credit b { font-weight: 700; color: #ffffff; }
+  </style>
+  <div id="root" data-composition-id="s6end" data-width="1920" data-height="1080" data-start="0" data-duration="5.4">
+    <div id="s6end-cam" class="cam" data-layout-allow-overflow>
+      <img id="s6end-img" class="clip shot" src="assets/screens/01_map.png" alt="" data-start="0" data-duration="1.4" data-track-index="1" />
+    </div>
+    <div id="s6end-ground" class="ground"></div>
+    <div id="s6end-lock" class="lock">
+      <div id="s6end-eyebrow" class="eyebrow">Neurociencias · TDAH · Comunitat Valenciana</div>
+      <div id="s6end-word" class="word" data-var-text="appName">Territory Scope NS Valencia</div>
+      <div id="s6end-rule" class="rule"></div>
+      <div id="s6end-credit" class="credit">Creado por la <b data-var-text="author">Dra. Miriam Martínez Santos</b></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#s6end-cam", { x: 0, y: 0, scale: 1 }, 0);
+    // la cámara entra en el banner azul de la app hasta que llena el plano
+    tl.to("#s6end-cam", { x: -1500 * 8 + 960, y: -150 * 8 + 540, scale: 8, duration: 1.0, ease: "power3.in" }, 0.15);
+    tl.to("#s6end-ground", { opacity: 1, duration: 0.25, ease: "none" }, 1.05);
+    tl.fromTo("#s6end-eyebrow", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 1.35);
+    tl.fromTo("#s6end-word", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.7, ease: "expo.out" }, 1.5);
+    tl.fromTo("#s6end-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "expo.out" }, 2.05);
+    tl.fromTo("#s6end-credit", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 2.35);
+    window.__timelines["s6end"] = tl;
+  </script>
+</template>

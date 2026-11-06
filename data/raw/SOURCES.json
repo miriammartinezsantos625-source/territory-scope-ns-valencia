@@ -1,0 +1,102 @@
+[
+  {
+    "id": "gva_departamentos",
+    "path": "gva/ca_departamentos_20261005.geojson",
+    "url": "https://dadesobertes.gva.es/dataset/ff6f20ee-aee6-4def-9f9b-451610ed47f9/resource/cacd9478-1ced-4c1b-a378-30aeee992f6c/download/ca_departamentos_20261005.geojson",
+    "titulo": "Capa de departamentos de salud de la Comunitat Valenciana (versión 05-10-2026)",
+    "editor": "Conselleria de Sanitat · Dades Obertes GVA (CC BY 4.0)",
+    "ficha": "https://dadesobertes.gva.es/es/dataset/sanidad-sip-departamentos-salud",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 10679413,
+    "sha256": "0563997d3a25ece2e7dc2d6c0012b7f77a154c90d074f5a403e5bbfc1404b115"
+  },
+  {
+    "id": "gva_mapa_sanitario",
+    "path": "gva/mapa_sanitario.csv",
+    "url": "https://dadesobertes.gva.es/dataset/0f78e3f9-6137-4ece-aa3f-be951c35de69/resource/34437ccd-288e-41cc-9a95-ea29a01588fd/download/informacion-del-mapa-sanitario-correspondiente-a-la-comunitat-valenciana.csv",
+    "titulo": "Información del mapa sanitario de la Comunitat Valenciana (callejero: tramo de vía → sección censal → zona básica y departamento, adulto y pediátrico)",
+    "editor": "Conselleria de Sanitat · Dades Obertes GVA (CC BY 4.0)",
+    "ficha": "https://dadesobertes.gva.es/es/dataset/sanidad-sip",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 42007888,
+    "sha256": "a45191c9e97d12a21a7be8b319a6bbb8bb34e5e11b7fbe99bd72737f9ed47a5f"
+  },
+  {
+    "id": "gva_relacion_dep_zona_muni_2020",
+    "path": "gva/sip_relacion_depzonamuni_cv.csv",
+    "url": "https://dadesobertes.gva.es/dataset/8918e103-a69a-43e6-a9ad-42e7beebed9b/resource/685c9c39-064d-4278-ba47-08ac19b4f1f1/download/sip_relacion_depzonamuni_cv.csv",
+    "titulo": "Relación departamento – zona básica – municipio (06-05-2020). Solo para contraste.",
+    "editor": "Conselleria de Sanitat · Dades Obertes GVA (CC BY 4.0)",
+    "ficha": "https://dadesobertes.gva.es/es/dataset/datos-de-departamentos-de-salud-zonas-basicas-y-municipios-de-la-comunitat-valenciana",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 38227,
+    "sha256": "2063af4c724fca9a807fc594ec8ba77c3bce9240b2012392316a5f5fb1e177aa"
+  },
+  {
+    "id": "ine_censo_anual_69105",
+    "path": "ine/censo_anual_seccion_edad_69105.csv",
+    "url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69105.csv",
+    "titulo": "INE · Censo Anual de Población. Población por sexo y edad (grupos quinquenales) por sección censal · Alicante/Alacant",
+    "editor": "Instituto Nacional de Estadística",
+    "ficha": "https://www.ine.es/jaxiT3/Tabla.htm?t=69105",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 49037765,
+    "sha256": "c3573162a220f7e77b5668f50c3b6d4147d8859acc1ca17f8dec1cfad62994a4"
+  },
+  {
+    "id": "ine_censo_anual_69153",
+    "path": "ine/censo_anual_seccion_edad_69153.csv",
+    "url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69153.csv",
+    "titulo": "INE · Censo Anual de Población. Población por sexo y edad (grupos quinquenales) por sección censal · Castellón/Castelló",
+    "editor": "Instituto Nacional de Estadística",
+    "ficha": "https://www.ine.es/jaxiT3/Tabla.htm?t=69153",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 21894323,
+    "sha256": "5e7a73b377cbc5a8308219e2473fc029af1bc3318ac9e659116e5191e07b4744"
+  },
+  {
+    "id": "ine_censo_anual_69277",
+    "path": "ine/censo_anual_seccion_edad_69277.csv",
+    "url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69277.csv",
+    "titulo": "INE · Censo Anual de Población. Población por sexo y edad (grupos quinquenales) por sección censal · Valencia/València",
+    "editor": "Instituto Nacional de Estadística",
+    "ficha": "https://www.ine.es/jaxiT3/Tabla.htm?t=69277",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 72599432,
+    "sha256": "fc02dbcf5f048332220eba832b49c5c3a4acff04f48864f885bbc64d29d17ddd"
+  },
+  {
+    "id": "gva_hospitales_svs",
+    "path": "gva/hospitales_svs.csv",
+    "url": "https://terramapas.icv.gva.es/15_SistemaValencianoSalud?request=GetFeature&service=WFS&version=2.0.0&typename=CentrosSanitarios.Hospitales&outputformat=csv",
+    "titulo": "Sistema Valenciano de Salud. Centros sanitarios: Hospitales (red pública)",
+    "editor": "Conselleria de Sanitat · Institut Cartogràfic Valencià (CC BY 4.0)",
+    "ficha": "https://dadesobertes.gva.es/es/dataset/sistema-valenciano-de-salud-centros-sanitarios-hospitales",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 8486,
+    "sha256": "fc3848e04886fe79b63846b2692edf96aea2dd9b18e7da38f9aed9fc853bb420"
+  },
+  {
+    "id": "gva_registro_centros_2021",
+    "path": "gva/centros_sanitarios_2021.csv",
+    "url": "https://dadesobertes.gva.es/dataset/c57f25f1-e7ea-4052-8467-09af3f574148/resource/bf116aea-6bf5-461b-97cd-ecd974a20310/download/centros-sanitarios_2021.csv",
+    "titulo": "Registro de centros, servicios y establecimientos sanitarios de la Comunitat Valenciana 2021",
+    "editor": "Conselleria de Sanitat · Dades Obertes GVA (CC BY 4.0)",
+    "ficha": "https://dadesobertes.gva.es/es/dataset/san-reg-centros-2021",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 2538408,
+    "sha256": "b8a182e7fc6ff6bfcc6d32afb7f289c76f4d820ac3ea1ac2ea930a12bf4037b9"
+  },
+  {
+    "id": "osm_psiquiatria",
+    "path": "osm/overpass_psiquiatria_cv.json",
+    "url": "https://overpass-api.de/api/interpreter",
+    "query": "[out:json][timeout:180];area[\"ISO3166-2\"=\"ES-VC\"]->.a;(nwr(area.a)[\"healthcare:speciality\"~\"psychiatry|child_psychiatry|paediatric_neurology\"];nwr(area.a)[\"healthcare\"][\"name\"~\"psiquiatr|salud mental|salut mental|TDAH|neuropediatr|paidopsiq\",i];nwr(area.a)[\"amenity\"~\"clinic|doctors\"][\"name\"~\"psiquiatr|salud mental|salut mental|TDAH|neuropediatr|paidopsiq\",i];);out center tags;",
+    "titulo": "OpenStreetMap · centros con especialidad psiquiatría / salud mental / neuropediatría en la CV",
+    "editor": "© colaboradores de OpenStreetMap (ODbL)",
+    "ficha": "https://www.openstreetmap.org/copyright",
+    "fecha_descarga": "2026-11-06",
+    "bytes": 10907,
+    "sha256": "74442a0a3bbabdb969b5b94f8e9a98fa88f0464a4e5d6542e12f3c3617ba5a4d"
+  }
+]

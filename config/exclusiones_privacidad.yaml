@@ -1,0 +1,6 @@
+# Revisión manual de privacidad (Fase 2).
+# Centros cuyo nombre contiene el nombre o apellidos de un profesional y que el filtro automático
+# no detecta. Se listan SOLO por identificador de la fuente, sin nombres ni direcciones.
+excluir_src_id:
+  - osm-node12546272922   # nombre del centro = apellidos de un profesional
+  - osm-node3338490510    # nombre del centro = apellido de un profesional

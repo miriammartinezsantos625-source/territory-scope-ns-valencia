@@ -1,0 +1,19 @@
+{
+  "anio_poblacion": "2025",
+  "total_ccaa_ine": 5425182,
+  "suma_municipios_ine": 5425182,
+  "suma_secciones_ine": 5425182,
+  "suma_24_departamentos": 5425182,
+  "dif_departamentos_vs_ine": 0,
+  "suma_pob_campos_capa_gva": 4661533,
+  "nota_campos_capa_gva": "Los campos POB_* de la capa de departamentos suman ~4,66 M (orden de la población CV ~2005); se consideran heredados y NO se usan como dato.",
+  "secciones_ine": 3549,
+  "secciones_asignadas_por_callejero": 3524,
+  "secciones_asignadas_por_distrito": 25,
+  "secciones_asignadas_por_municipio": 0,
+  "poblacion_asignada_sin_callejero": 5573,
+  "secciones_sin_asignar": [],
+  "secciones_partidas_en_callejero": 20,
+  "municipios_multidepartamento": 6,
+  "secciones_dpto_pediatrico_distinto": 0
+}

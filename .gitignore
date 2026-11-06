@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+# Capa privada (relación existente con cuentas): NUNCA al repositorio
+data/private/
+# Descargas originales voluminosas: se regeneran con scripts/01_download_phase1.py
+data/raw/gva/*.csv
+data/raw/gva/*.geojson
+data/raw/ine/
+.streamlit/secrets.toml
+data/raw/osm/
+data/raw/geocode_cache.json
+# Vídeo: renders y cachés de HyperFrames (el vídeo final está en docs/)
+video/promo/renders/
+video/promo/.hyperframes/
+video/promo/.media/
+video/promo/node_modules/
+video/promo/.thumbnails/
+video/promo/.waveform-cache/
+# Música del catálogo de HeyGen: licencia de uso en vídeos, no de redistribución del archivo
+video/promo/assets/audio/music.mp3

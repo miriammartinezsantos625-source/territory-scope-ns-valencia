@@ -1,0 +1,70 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #F5F7FB; font-family: "Inter", sans-serif; }
+    #root .pop { position: absolute; inset: 0; transform-origin: 50% 50%; }
+    #root .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    #root .shot { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; }
+    #root .mark { position: absolute; background: rgba(255, 214, 10, 0.50); mix-blend-mode: multiply; border-radius: 4px;
+                  transform-origin: 0 50%; opacity: 0; z-index: 50; }
+    #root .cursor { position: absolute; left: 0; top: 0; width: 54px; height: 54px; z-index: 90; opacity: 0; }
+    #root .cursor .ci { width: 54px; height: 54px; transform-origin: 6px 4px; }
+    #root .cap { position: absolute; left: 192px; bottom: 132px; z-index: 80; opacity: 0; }
+    #root .cap span { display: inline-block; background: rgba(11, 37, 69, 0.92); color: #fff; font-weight: 700;
+                      font-size: 40px; letter-spacing: -0.01em; padding: 16px 28px; border-radius: 10px;
+                      box-shadow: 0 10px 30px rgba(11, 37, 69, 0.25); }
+  </style>
+  <div id="root" data-composition-id="s2rank" data-width="1920" data-height="1080" data-start="0" data-duration="7.4">
+    <div id="s2rank-pop" class="pop">
+      <div id="s2rank-cam" class="cam" data-layout-allow-overflow>
+        <img id="s2rank-img0" class="clip shot" src="assets/screens/03_map_pacientes.png" alt="" data-start="0" data-duration="0.83" data-track-index="1" />
+        <img id="s2rank-img1" class="clip shot" src="assets/screens/04_ranking.png" alt="" data-start="0.83" data-duration="3.4" data-track-index="2" />
+        <img id="s2rank-img2" class="clip shot" src="assets/screens/05_ranking_dropdown.png" alt="" data-start="4.23" data-duration="0.8" data-track-index="3" />
+        <img id="s2rank-img3" class="clip shot" src="assets/screens/06_ranking_A.png" alt="" data-start="5.03" data-duration="2.37" data-track-index="4" />
+        <div id="s2rank-mk0" class="mark" style="left:602px;top:686px;width:174px;height:34px"></div>
+        <div id="s2rank-mk1" class="mark" style="left:1253px;top:686px;width:400px;height:34px"></div>
+        <div id="s2rank-mk2" class="mark" style="left:466px;top:586px;width:84px;height:30px"></div>
+        <div id="s2rank-mk3" class="mark" style="left:519px;top:686px;width:82px;height:224px"></div>
+      </div>
+    </div>
+    <div id="s2rank-cap0" class="cap"><span>Ranking A/B/C con su porqué</span></div>
+    <div id="s2rank-cap1" class="cap"><span>Segmento A: visita mensual</span></div>
+    <div id="s2rank-cur" class="cursor" data-layout-ignore>
+      <svg id="s2rank-curi" class="ci" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 2.5 L5 19.5 L9.4 15.4 L12.3 21.6 L15.2 20.3 L12.4 14.2 L18.6 14.2 Z"
+              fill="#111827" stroke="#ffffff" stroke-width="1.4" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#s2rank-cam", { x: 0.0, y: 0.0, scale: 1.0 }, 0);
+    tl.set("#s2rank-pop", { scale: 1 }, 0);
+    tl.to("#s2rank-cam", { x: -620.8, y: -479.1, scale: 1.4436, duration: 0.75, ease: "power2.inOut" }, 1.35);
+    tl.fromTo("#s2rank-pop", { scale: 1.03 }, { scale: 1, duration: 0.35, ease: "expo.out" }, 0.863);
+    tl.fromTo("#s2rank-mk0", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 2.2);
+    tl.to("#s2rank-mk0", { opacity: 0, duration: 0.2, ease: "power1.out" }, 4.2);
+    tl.fromTo("#s2rank-mk1", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 2.45);
+    tl.to("#s2rank-mk1", { opacity: 0, duration: 0.2, ease: "power1.out" }, 4.2);
+    tl.fromTo("#s2rank-mk2", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 5.45);
+    tl.fromTo("#s2rank-mk3", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 5.6);
+    tl.set("#s2rank-cur", { opacity: 0 }, 0);
+    tl.set("#s2rank-cur", { x: 1240.0, y: 900.0 }, 0.0);
+    tl.to("#s2rank-cur", { opacity: 1, duration: 0.15 }, 0.0);
+    tl.to("#s2rank-cur", { opacity: 0, duration: 0.2 }, 6.2);
+    tl.to("#s2rank-cur", { x: 704.5, y: 460.0, duration: 0.7, ease: "power3.inOut" }, 0.05);
+    tl.to("#s2rank-cur", { x: 1671.2, y: 944.5, duration: 0.6, ease: "power3.inOut" }, 1.35);
+    tl.to("#s2rank-cur", { x: 1683.2, y: 316.3, duration: 0.7, ease: "power3.inOut" }, 3.3);
+    tl.to("#s2rank-cur", { x: 1683.2, y: 439.0, duration: 0.5, ease: "power3.inOut" }, 4.45);
+    tl.to("#s2rank-curi", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 0.77);
+    tl.to("#s2rank-curi", { scale: 1, duration: 0.14, ease: "power2.out" }, 0.83);
+    tl.to("#s2rank-curi", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 4.17);
+    tl.to("#s2rank-curi", { scale: 1, duration: 0.14, ease: "power2.out" }, 4.23);
+    tl.to("#s2rank-curi", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 4.97);
+    tl.to("#s2rank-curi", { scale: 1, duration: 0.14, ease: "power2.out" }, 5.03);
+    tl.fromTo("#s2rank-cap0", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 2.0);
+    tl.to("#s2rank-cap0", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 4.0);
+    tl.fromTo("#s2rank-cap1", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 5.4);
+    tl.to("#s2rank-cap1", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 7.2);
+    window.__timelines["s2rank"] = tl;
+  </script>
+</template>

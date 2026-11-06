@@ -1,0 +1,59 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #F5F7FB; font-family: "Inter", sans-serif; }
+    #root .pop { position: absolute; inset: 0; transform-origin: 50% 50%; }
+    #root .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    #root .shot { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; }
+    #root .mark { position: absolute; background: rgba(255, 214, 10, 0.50); mix-blend-mode: multiply; border-radius: 4px;
+                  transform-origin: 0 50%; opacity: 0; z-index: 50; }
+    #root .cursor { position: absolute; left: 0; top: 0; width: 54px; height: 54px; z-index: 90; opacity: 0; }
+    #root .cursor .ci { width: 54px; height: 54px; transform-origin: 6px 4px; }
+    #root .cap { position: absolute; left: 192px; bottom: 132px; z-index: 80; opacity: 0; }
+    #root .cap span { display: inline-block; background: rgba(11, 37, 69, 0.92); color: #fff; font-weight: 700;
+                      font-size: 40px; letter-spacing: -0.01em; padding: 16px 28px; border-radius: 10px;
+                      box-shadow: 0 10px 30px rgba(11, 37, 69, 0.25); }
+  </style>
+  <div id="root" data-composition-id="s5plan" data-width="1920" data-height="1080" data-start="0" data-duration="4.6">
+    <div id="s5plan-pop" class="pop">
+      <div id="s5plan-cam" class="cam" data-layout-allow-overflow>
+        <img id="s5plan-img0" class="clip shot" src="assets/screens/09_journey_top.png" alt="" data-start="0" data-duration="0.68" data-track-index="1" />
+        <img id="s5plan-img1" class="clip shot" src="assets/screens/12_plan.png" alt="" data-start="0.68" data-duration="2.15" data-track-index="2" />
+        <img id="s5plan-img2" class="clip shot" src="assets/screens/13_plan_agenda.png" alt="" data-start="2.83" data-duration="1.77" data-track-index="3" />
+        <div id="s5plan-mk0" class="mark" style="left:896px;top:708px;width:150px;height:104px"></div>
+        <div id="s5plan-mk1" class="mark" style="left:465px;top:826px;width:628px;height:32px"></div>
+        <div id="s5plan-mk2" class="mark" style="left:511px;top:443px;width:378px;height:70px"></div>
+      </div>
+    </div>
+    <div id="s5plan-cap0" class="cap"><span>Plan de visitas automático</span></div>
+    <div id="s5plan-cur" class="cursor" data-layout-ignore>
+      <svg id="s5plan-curi" class="ci" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 2.5 L5 19.5 L9.4 15.4 L12.3 21.6 L15.2 20.3 L12.4 14.2 L18.6 14.2 Z"
+              fill="#111827" stroke="#ffffff" stroke-width="1.4" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#s5plan-cam", { x: 0.0, y: 0.0, scale: 1.0 }, 0);
+    tl.set("#s5plan-pop", { scale: 1 }, 0);
+    tl.to("#s5plan-cam", { x: -699.5, y: -527.4, scale: 1.4884, duration: 0.7, ease: "power2.inOut" }, 1.0);
+    tl.to("#s5plan-cam", { x: -547.0, y: -560.0, scale: 2.2, duration: 0.01, ease: "none" }, 2.83);
+    tl.fromTo("#s5plan-pop", { scale: 1.03 }, { scale: 1, duration: 0.35, ease: "expo.out" }, 0.713);
+    tl.fromTo("#s5plan-pop", { scale: 1.03 }, { scale: 1, duration: 0.35, ease: "expo.out" }, 2.863);
+    tl.fromTo("#s5plan-mk0", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 1.6);
+    tl.to("#s5plan-mk0", { opacity: 0, duration: 0.2, ease: "power1.out" }, 2.8);
+    tl.fromTo("#s5plan-mk1", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 1.85);
+    tl.to("#s5plan-mk1", { opacity: 0, duration: 0.2, ease: "power1.out" }, 2.8);
+    tl.fromTo("#s5plan-mk2", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 3.2);
+    tl.set("#s5plan-cur", { opacity: 0 }, 0);
+    tl.set("#s5plan-cur", { x: 1300.0, y: 700.0 }, 0.0);
+    tl.to("#s5plan-cur", { opacity: 1, duration: 0.15 }, 0.0);
+    tl.to("#s5plan-cur", { opacity: 0, duration: 0.2 }, 1.0);
+    tl.to("#s5plan-cur", { x: 1014.0, y: 460.0, duration: 0.6, ease: "power3.inOut" }, 0.0);
+    tl.to("#s5plan-curi", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 0.62);
+    tl.to("#s5plan-curi", { scale: 1, duration: 0.14, ease: "power2.out" }, 0.68);
+    tl.fromTo("#s5plan-cap0", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 1.5);
+    tl.to("#s5plan-cap0", { opacity: 0, filter: "blur(6px)", duration: 0.15, ease: "power2.in" }, 4.4);
+    window.__timelines["s5plan"] = tl;
+  </script>
+</template>
